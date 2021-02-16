@@ -1,0 +1,375 @@
+{
+	"Basic": {
+		"prefix": "basic",
+		"body": [
+			"/*                 -> Bismillahir Rahmanir Rahim <-                */",
+			"/*",
+			"   Motto - Try Hard To become -> specialist <-  :)",
+			"*/",
+			"#include<bits/stdc++.h>",
+			"using namespace std;",
+			"//Some Hints",
+			"//Find odd and even return 1 || 0",
+			"// __builtin_parity() if x is ll use __builtin_parityll(x)",
+			"#define gcd(a,b) __gcd(a,b)",
+			"#define lcm(a,b) (a*(b/gcd(a,b)))",
+			"// count how many 0 in a bynary number",
+			"#define NumOf0(x) __builtin_popcount(x)",
+			"// count how many 1 in a bynary number",
+			"#define NumOf1(x) __builtin_ctz(x)",
+			"#define pi acos(-1)",
+			"typedef  long long ll;",
+			"typedef  unsigned long long ull;",
+			"typedef  unsigned un;",
+			"#define Bismilla ios_base::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL)",
+			"bool isPrime(int n){if(n<2){return false;}if(n==2||n==3){return true;}if(n%2==0){return false;}for(ll i=3; i*i<=n; i+=2){if(n%i==0){return false;}}return true;}",
+			"#define pb push_back",
+			"#define vi vector<int>",
+			"#define vl vector<ll>",
+			"#define In insert",
+			"#define mini(a,b) a=min(a,(b))",
+			"#define maxi(a,b) a=max(a,(b))",
+			"#define ln \"\\n\"",
+			"#define pf printf",
+			"// Now Start.....:)",
+			"",
+			"",
+			"void solve()",
+			"{",
+			"    int n, m, k,cnt=0;",
+			"    ${0}",
+			"   ",
+			"}",
+			"",
+			"int main()",
+			"{",
+			"   Bismilla;",
+			"   solve();",
+			"}",
+			"",
+			""
+		],
+		"description": "Basic"
+	},
+	"for loop for stl": {
+		"prefix": "fstl",
+		"body": [
+			"for(auto ${1:i}=${2:vec}.begin();${1:i}!=${2:vec}.end();${1:i}++)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "for loop for stl"
+	},
+	"for auto direct access": {
+		"prefix": "fat",
+		"body": [
+			"for(auto &${1:x}:${2:wow})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "for auto direct access"
+	},
+	"for reverse loop for stl": {
+		"prefix": "fstlr",
+		"body": [
+			"for(auto ${1:i}=${2:vec}.rbegin();${1:i}!=${2:vec}.rend();${1:i}++)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "for reverse loop for stl"
+	},
+	"void function": {
+		"prefix": "vfun",
+		"body": [
+			"void ${1:function_name}(${2:perimeter})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "void function"
+	},
+	"type function": {
+		"prefix": "tfun",
+		"body": [
+			"${1:int} ${2:function_name}(${3:perimeter})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "type function"
+	},
+	"return": {
+		"prefix": "rt",
+		"body": [
+			"return $0",
+		],
+		"description": "return"
+	},
+	//printing start here
+	"print 1 value int": {
+		"prefix": "pi",
+		"body": [
+		  "printf(\"%d\\n\",${1:x});"
+		],
+		"description": "print 1 value int"
+	},
+	"print 2 value int": {
+		"prefix": "pii",
+		"body": [
+		  "printf(\"%d %d\\n\",${1:x},${2:y});"
+		],
+		"description": "print 2 value int"
+	},
+	"print 3 value int": {
+		"prefix": "piii",
+		"body": [
+		  "printf(\"%d %d %d\\n\",${1:x},${2:y},${3:z});"
+		],
+		"description": "print 3 value int"
+	},
+	"print 4 value int": {
+		"prefix": "pi4",
+		"body": [
+		  "printf(\"%d %d %d %d\\n\",${1:x},${2:y},${3:z},${4:a});"
+		],
+		"description": "print 3 value int"
+	},
+	"print 1 value long": {
+		"prefix": "pl",
+		"body": [
+		  "printf(\"%lld\\n\",${1:x});"
+		],
+		"description": "print 1 value long"
+	},
+	"print 2 value long": {
+		"prefix": "pll",
+		"body": [
+		  "printf(\"%lld %lld\\n\",${1:x},${2:y});"
+		],
+		"description": "print 2 value long"
+	},
+	"print 3 value long": {
+		"prefix": "plll",
+		"body": [
+		  "printf(\"%lld %lld %lld\\n\",${1:x},${2:y},${3:z});"
+		],
+		"description": "print 3 value long"
+	},
+	"print 4 value long": {
+		"prefix": "pl4",
+		"body": [
+		  "printf(\"%lld %lld %lld %lld\\n\",${1:x},${2:y},${3:z},${4:a});"
+		],
+		"description": "print 4 value long"
+	},
+	"printing case": {
+		"prefix": "cas",
+		"body": [
+			"cout << \"Case \" << cas << \": \";",
+			"${0}"
+		],
+		"description": "printing case"
+	},
+	"printing YES": {
+		"prefix": "YES",
+		"body": [
+			"cout << \"YES\\n\";",
+			"${0}"
+		],
+		"description": "printing YES"
+	},
+	"printing Yes": {
+		"prefix": "Yes",
+		"body": [
+			"cout << \"Yes\\n\";",
+			"${0}"
+		],
+		"description": "printing Yes"
+	},
+	"printing NO": {
+		"prefix": "NO",
+		"body": [
+			"cout << \"NO\\n\";",
+			"${0}"
+		],
+		"description": "printing NO"
+	},
+	"printing No": {
+		"prefix": "No",
+		"body": [
+			"cout << \"No\\n\";",
+			"${0}"
+		],
+		"description": "printing No"
+	},
+	"printing 1 anything": {
+		"prefix": "o1",
+		"body": [
+			"cout << ${1:x}<<\"\\n\";",
+			"${0}"
+		],
+		"description": "printing 1 anything"
+	},
+	"output 2 anything": {
+		"prefix": "o2",
+		"body": [
+			"cout<<${1:x}<<\" \"<<${2:y}<<\"\\n\";",
+			"${0}"
+		],
+		"description": "output 2 anything"
+	},
+	"output 3 anything": {
+		"prefix": "o3",
+		"body": [
+			"cout<<${1:x}<<\" \"<<${2:y}<<\" \"<<${3:z}<<\"\\n\";",
+			"${0}"
+		],
+		"description": "output 3 anything"
+	},
+	"output 4 anything": {
+		"prefix": "o4",
+		"body": [
+			"cout<<${1:x}<<\" \"<<${2:y}<<\" \"<<${3:z}<<\" \"<<${4:a}<<\"\\n\";",
+			"${0}"
+		],
+		"description": "output 4 anything"
+	},
+	//intput
+	"taking 1 anything": {
+		"prefix": "i1",
+		"body": [
+			"cin>>${1:x};",
+			"${0}"
+		],
+		"description": "taking 1 anything"
+	},
+	"taking 2 anything": {
+		"prefix": "i2",
+		"body": [
+			"cin>>${1:x}>>${2:y};",
+			"${0}"
+		],
+		"description": "taking 2 anything"
+	},
+	"taking 3 anything": {
+		"prefix": "i3",
+		"body": [
+			"cin>>${1:x}>>${2:y}>>${3:z};",
+			"${0}"
+		],
+		"description": "taking 3 anything"
+	},
+	"taking 4 anything": {
+		"prefix": "i4",
+		"body": [
+			"cin>>${1:x}>>${2:y}>>${3:z}>>${4:a};",
+			"${0}"
+		],
+		"description": "taking 4 anything"
+	},
+	"taking 1 integer": {
+		"prefix": "si",
+		"body": [
+		  "scanf(\"%d\",&${1:n});"
+		],
+		"description": "taking 1 integer"
+	},
+	"taking 2 integer": {
+		"prefix": "sii",
+		"body": [
+		  "scanf(\"%d %d\",&${1:n},&${2:m});"
+		],
+		"description": "taking 2 integer"
+	},
+	"taking 3 integer": {
+		"prefix": "siii",
+		"body": [
+		  "scanf(\"%d %d %d\",&${1:n},&${2:m},&${3:z});"
+		],
+		"description": "taking 3 integer"
+	},
+	"taking 4 integer": {
+		"prefix": "si4",
+		"body": [
+		  "scanf(\"%d %d %d %d\",&${1:n},&${2:m},&${3:z},&${4:a});"
+		],
+		"description": "taking 3 integer"
+	},
+	"taking 1 input long": {
+		"prefix": "sl",
+		"body": [
+		  "scanf(\"%lld\", &${1:n});"
+		],
+		"description": "taking 1 input long"
+	},
+	"taking 2 input long": {
+		"prefix": "sll",
+		"body": [
+		  "scanf(\"%lld %lld\",&${1:n},&${2:m});"
+		],
+		"description": "taking 2 long long"
+	},
+	"taking 3 input long long": {
+		"prefix": "slll",
+		"body": [
+		  "scanf(\"%lld %lld %lld\",&${1:n},&${2:m},&${3:z});"
+		],
+		"description": "taking 3 input long long"
+	},
+	"taking 4 long long": {
+		"prefix": "sl4",
+		"body": [
+		  "scanf(\"%lld %lld %lld %lld\",&${1:n},&${2:m},&${3:z},&${4:a});"
+		],
+		"description": "taking 4 long long"
+	},
+	"getline": {
+		"prefix": "gl",
+		"body": [
+			"getline(cin,${1:str});",
+			"$0"
+		],
+		"description": "getline"
+	},
+	"get char string": {
+		"prefix": "gs",
+		"body": [
+			"cin.getline(${1:str},${2:size});\n$0"
+		],
+		"description": "get char string"
+	},
+	"get char": {
+		"prefix": "gc",
+		"body": [
+			"getchar();\n$0"
+		],
+		"description": "get char"
+	},
+	"test cases for intiger": {
+		"prefix": "test",
+		"body": [
+			"int Test_Limit;",
+			"cin>>Test_Limit;",
+			"for (int cas = 1; cas <= Test_Limit; cas++)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "test cases for intiger"
+	},
+	"while decrementing": {
+		"prefix": "wa",
+		"body": [
+			"int ${1:t};",
+			"cin>> ${1:t};",
+			"while(${1:t}--)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "while decrementing"
+	}
+}
